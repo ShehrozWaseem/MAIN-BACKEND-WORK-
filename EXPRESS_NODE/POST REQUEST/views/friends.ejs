@@ -1,0 +1,11 @@
+<h1>Friends list goes here</h1>
+
+<%f.forEach(function(ff){ %>	
+ <li><%= ff %></li>
+<% }); %>
+<!-- //action should match the route decribed in app.post func in PostReq.js file -->
+
+<form action="/addfriend" method="POST">
+	<input type="text" name="newf" placeholder="name" >
+	<button>ADD FRIEND</button>
+	</form>
